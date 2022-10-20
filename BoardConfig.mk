@@ -28,7 +28,7 @@ PRODUCT_FS_COMPRESSION := 1
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aosp/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/proton/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += sweet
 ODM_MANIFEST_SWEET_FILES := \
@@ -98,7 +98,6 @@ TARGET_SCREEN_DENSITY := 440
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2022-08-01
